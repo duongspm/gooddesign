@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="26" viewBox="0 0 52 26">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="4"/>
+      <feFlood result="flood" flood-color="#ffca85"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_5" data-name="グループ 5" class="cls-1">
+    <image id="ベクトルスマートオブジェクト" width="52" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAaCAYAAAD43n+tAAACE0lEQVRYhe2XMWsUQRTHf2cMWBjiBW1CDEJsBDUIKS38BBZyJBAhWKQytXgGmyh4BxY2FgGthCtS5TjyARJiIEUENSkNiKBEtDhFTKK5RAbewGZ5646zo3sH/uGxe29n3rzfzeybnQLpGgHGHNqlaQ5YCxAnk64BP4CDAGbilPKEuQ60xBqBoFoSN1cYm0C1U6E0GKsHnQb1OxircqdAWRjz8o6mtG17qIkIzFXHPiGhboQCMfvQaeAd8FPKauMP+huoSqBcXgtgkmrAQ5dAFyXQpGcijwPNlIuV05I5Erl/4wlk+00DRcWmPONqqqRBHQ042DbQVPzf5foCuBT7E31kl3hV66sFN1XnZcRuiX855u9JSOaePH8a8y9I8dnPCIRA3dceaDN0ChiO/F6U6wWgN+LvShhsUPprs1WT67MAM3UX6I4vwaxBfVQLOFO340svDyAEaly2iqw6BJUXEHI+KoWG0t6hVWAm9hvpcCzi30kIXgfeiqXJbOI3gSeBoBKBVhW/WiYV1cVcZfexWeCOB4gpQq+AFZOjBjQAnAX2gOceA/hqN6EyxnUSOC8+k99XuTf5NjUgs64fAV+AE/8QyFWXgXlpW4z3ybMo/BX9B2p3FeT4YKrEJvBNPn36ZSdfd8jftv8AfFKe98mZ6yOwpTw/DgwBn4H3DuOZz68zcr8hn2DngCXginHa81Cn2yLAL0CCNSVwrToZAAAAAElFTkSuQmCC"/>
+  </g>
+</svg>
