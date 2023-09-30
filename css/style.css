@@ -48,6 +48,7 @@ body.loaded {
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -121,7 +122,7 @@ img.full {
 	position: relative;
 }
 .photo__capIn{
-	font-size: 10px;
+	font-size: 1.2rem;
 	position: absolute;
 	right: 3px;
 	bottom: 5px;
@@ -177,7 +178,9 @@ img.full {
 	position: relative;
 	width: 67.5%;
 }
-
+.mvContent .mvCap{
+	font-size: 1.2rem;
+}
 .mvBtn {
 	max-width: 63%;
 	width: 580px;
@@ -326,6 +329,15 @@ img.full {
 /*==================================================================
 	common setting
 ===================================================================*/
+.anchorlink {
+	position: relative;
+}
+
+.anchorlink>div {
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
 .w970 {
 	margin: 0 auto;
 	max-width: 970px;
@@ -513,13 +525,13 @@ img.full {
 	margin-top: 50px;
 	display: block;
 	width: 420px;
-	padding: 18px 0;
+	padding: 14px 0;
 	border-radius: 120px;
 	background: #000000;
 	color: #ffffff !important;
 	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 16px;
+	font-weight: 500;
+	font-size: 14px;
 	line-height: 1.5;
 	text-align: center;
 	position: relative;
@@ -689,7 +701,7 @@ img.full {
 .pointBlock{
 	padding: min(2.5vw, 30px);
 	background: #f5f5f5;
-	margin-bottom: 28px;
+	margin-bottom: 20px;
 }
 .pointBlock__head{
 }
@@ -973,14 +985,34 @@ img.full {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 20px;
 }
 .keywords__content{
-	margin-top: 25px;
 	border: 1px solid #e8e8e8;
 	padding: min(3vw, 25px);
 }
 .keywords__content p{
 	font-size: 14px;
+}
+
+.keywords__table table{
+	width: 100%;
+}
+.keywords__table table th, .keywords__table table td {
+    border: 1px solid #868686;
+    padding: 15px 0 15px 15px;
+	font-size: 16px;
+	line-height: 1.8;
+}
+.keywords__table table tr th {
+    background: #f8f8f8;
+    width: 18.05%;
+}
+.keywords__table table tr td {
+    width: 81.95%;
+}
+.keywords__table table tr td span{
+	font-size: 12px;
 }
 /* 25092023 */
 .secTopics .pointBox .pointBoxItem {
@@ -1029,6 +1061,21 @@ img.full {
 	margin-top: 6px;
 }
 
+.pointIntroVideo{
+	margin-top: min(5vw, 40px);
+	border: 1px solid #000000;
+	padding: min(5vw, 50px) 0 min(6.5vw, 65px) 0;
+}
+.pointIntroVideo-title{
+	font-size: min(2.5vw, 24px);
+	font-weight: bold;
+	text-align: center;
+}
+.pointIntroVideo-inner{
+	max-width: 625px;
+	margin: 30px auto 0;
+}
+
 @media screen and (max-width: 767px) {
 	.secTopics {
 		padding: 35px 0 50px 0;
@@ -1045,7 +1092,7 @@ img.full {
 	}
 
 	.secTopics .topicBoxRight .txt {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 1.8;
 		margin: 25px 0 5px 0;
 	}
@@ -1103,7 +1150,7 @@ img.full {
 
 	.secTopics .pointBox .ttl02 {
 		font-size: min(5.5vw, 21px);
-		padding: 15px 0;
+		padding: 11px 0;
 	}
 
 
@@ -1141,9 +1188,9 @@ img.full {
 		width: fit-content;
 	}
 	.pointBoxVideo-img{
-		width: 100%;
+		width: 70%;
 		text-align: center;
-		margin-bottom: 30px;
+		margin: 0 auto 30px;
 	}
 	.pointBoxVideo-yt{
 		width: 100%;
@@ -1201,6 +1248,16 @@ img.full {
 	.btn-good{
 		padding: 10px 0;
 		width: 100%;
+		max-width: 345px;
+		margin: 20px auto 0;
+		font-size: min(3.6vw, 14px);
+	}
+	.btn-good::after{
+		right: 12px;
+		width: min(6vw, 22px);
+	}
+	.caption{
+		font-size: 10px;
 	}
 	.pointBlock-title__cap{
 		height: auto;
@@ -1315,11 +1372,22 @@ img.full {
 		padding: 0 20px;
 	}
 	.keywords__title{
-		font-size: clamp(18px, 2.5vw, 20px);
+		font-size: clamp(18px, 5vw, 24px);
 	}
-	.keywords__content{
-		margin-top: 15px;
+	.keywords__table table th, .keywords__table table td{
+		font-size: min(3.5vw, 14px);
+		padding: 8px;
 	}
+	.keywords__table table tr th {
+		width: 30.667%;
+	}
+	.keywords__table table tr td{
+		width: 69.333%;
+	}
+	.keywords__table table tr td span {
+		font-size: min(3.5vw, 10px);
+	}
+
 	.keywords__content p{
 		font-size: 12px;
 	}
@@ -1337,6 +1405,16 @@ img.full {
 	}
 	.box-tel{
 		margin-top: 30px;
+	}
+
+	.pointIntroVideo-title{
+		font-size: clamp(16px, 4vw, 24px);
+	}
+	.pointIntroVideo{
+		padding: 25px 15px 18px 15px;
+	}
+	.pointIntroVideo-inner{
+		margin: 20px auto 0;
 	}
 	/* 25092023 */
 }
@@ -1613,7 +1691,7 @@ img.full {
 
 @media screen and (max-width: 767px) {
 	.secCaptions {
-		padding: 0 15px 150px;
+		padding: 0 15px 190px;
 	}
 	.secCaptions li{
 		font-size: 10px;
@@ -1699,7 +1777,7 @@ img.full {
 	}
 
 	.mvCap.spot04 {
-		right: -5px;
+		right: 0;
 		bottom: -16px;
 	}
 }
@@ -1897,7 +1975,7 @@ img.full {
 	width: 32.479%;
 }
 .topicGroup-img__cap{
-	font-size: 10px;
+	font-size: 2rem;
 	margin-top: 8px;
 	text-align: center;
 }
@@ -2070,6 +2148,9 @@ img.full {
 	.group-btn__title{
 		font-size: min(4.5vw, 20px);
 	}
+	.topicGroup-img__cap{
+		font-size: 14px;
+	}
 }
 @media screen and (max-width: 420px) {
 	.pointBoxMore__item:nth-child(2) img{
@@ -2083,6 +2164,7 @@ img.full {
 }
 
 .technical{
+	padding-top: 50px;
 	background: #F5F5F5;
 	padding-bottom: min(12vw, 120px);
 }
@@ -2093,7 +2175,7 @@ img.full {
 	text-align: center;
 }
 .technical__list{
-	margin: 30px 0;
+	margin: 30px 0 40px 0;
 	display: flex;
 	justify-content: space-between;
 }

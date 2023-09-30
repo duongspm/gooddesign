@@ -1,7 +1,13 @@
 goodesign
 
 index.html
-imgs/logo-g.jpg/topic-img01.jpg
+css/style.css
+imgs/logo-g.jpg
+imgs/topic-img01.jpg
+imgs/technical-img01.jpg
+imgs/technical-img02.jpg
+imgs/technical-img03.jpg
+
 - chi thi
 15 ?
 
